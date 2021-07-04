@@ -42,7 +42,7 @@ namespace BookMag.Pages
                 Книги S = BookList[i];
                 Uri U = new Uri(S.Обложка, UriKind.RelativeOrAbsolute);
                 ME.Source = U;
-                //   i++;
+
             }
         }
         private void TextBlock_Initialized(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace BookMag.Pages
                 TextBlock TB = (TextBlock)sender;
                 Книги S = BookList[i];
                 TB.Text = "Название: " + S.Название;
-                //  i++;
+
             }
 
         }
@@ -130,11 +130,6 @@ namespace BookMag.Pages
         private void PriceFinal_Initialized(object sender, EventArgs e)
         {
             TextBlock TB = (TextBlock)sender;
-
-            //if (S.Цена)
-            //{
-
-            //}
             TB.Text = "Цена покупки: " + P + " руб";
         }
 
